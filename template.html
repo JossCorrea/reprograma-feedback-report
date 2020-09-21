@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Report Semana{{semana}} </title>
+</head>
+<body>
+    <h1>FEEDBACK</h1>
+    <h2>Semana {{semana}} | {{assunto}} </h2>
+    <p>Professora: {{professora}}</p>
+    <h3>O quanto você(aluna) se dedicou essa semana?</h3>
+    <p> Média {{media_dedicacao}}</p> 
+
+    <h3>O quanto você acha que aprendeu sobre o tema dessa semana?</h3>
+    <p> Média {{media_aprendizado}}</p> 
+
+    <!-- <h3>Como você avalia o conteúdo apresentado nessa semana?</h3> -->
+    {{df_table1}}
+    
+    <!-- <h3>Qual(is) o(s) motivo(s) para esta avaliação sobre o conteúdo?</h3> -->
+    {{df_table2}}
+
+    <!-- <h3>Dos conteúdos vistos essa semana, existe algum que você considera não ter compreendido?</h3> -->
+    {{df_table3}}
+
+    <!-- <h3>Como você avalia a professora dessa semana?</h3> -->
+    {{df_table4}}
+
+    <!-- <h3>Qual(is) o(s) motivo(s) para esta avaliação da professora?</h3> -->
+    {{df_table5}}
+
+
+    <h3>Como você avalia a sua experiência com o plantão de dúvidas no slack essa semana?'</h3>
+    <p> Média {{media_monitoria}}</p> 
+
+    <!-- <h3>Como você avalia a sua experiência com o plantão de dúvidas no slack essa semana?'</h3> -->
+    {{df_table6}}
+
+    <!-- <h3>O que poderia ser melhorado nessa semana?</h3> -->
+    {{df_table7}}
+</body>
+</html>
+

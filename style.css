@@ -1,0 +1,47 @@
+*{
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    margin:0;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h3{
+    font-weight: bold;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+th,td{
+    font-weight:normal;
+}
+
+tbody{
+    width: 100%;
+}
+
+thead th{
+    font-weight: bold;
+    width: 90%;
+}
+
+.dataframe{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+tbody tr{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
