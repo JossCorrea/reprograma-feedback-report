@@ -139,3 +139,7 @@ cython_debug/
 
 #vsCode
 .vscode/
+
+#Prevenir envio inadivertido dos dados/relatorios para o github
+data/
+*.pdf
