@@ -51,18 +51,18 @@ def main():
     df_avaliacoes = df_avaliacoes_raw.rename(columns=new_columns,inplace=False)
 
     # 1.2 Período considerado na avaliação
-    dt_inicio = datetime.strptime(dt_aula,"%d/%m/%Y" )  
+    dt_inicio = datetime.strptime(dt_aula,"%d/%m/%Y" )
     dt_fim = dt_inicio + timedelta(days = 6)
 
     # 2. Transformação
 
     # 2.1 Conversão das datas de string para data
-    df_avaliacoes['Submitted At'] = pd.to_datetime(df_avaliacoes['Submitted At'])
-
+    df_avaliacoes['Submitted At'] = pd.to_datetime(df_avaliacoes['Submitted At'] , format="%d/%m/%Y %H:%M:%S")
+    
     # 2.2 Filtrando dados por intervalo de datas (semana)
-    filtro_semana = (df_avaliacoes['Submitted At'] >= dt_inicio) & (df_avaliacoes['Submitted At'] <= dt_fim)
+    filtro_semana = (df_avaliacoes['Submitted At'] >= dt_inicio) & (df_avaliacoes['Submitted At'] <= dt_fim )
     df_sem = df_avaliacoes[filtro_semana]
-
+   
     # 2.3 Calculando valores dos relatórios
     total_respostas = df_sem.shape[0]
 
